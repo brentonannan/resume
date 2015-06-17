@@ -16,7 +16,7 @@ To compile:
 
 This will need to be re-run whenever you make changes to either of the source files. It saves the output to:
 
-  /tmp/resume.html
-  /tmp/resume.css
+    /tmp/resume.html
+    /tmp/resume.css
 
 You can open these files directly from your browser address bar.
