@@ -1,11 +1,15 @@
 $default_color: black;
+$default_font: 'Open Sans', sans-serif;
 
+body {
+  font-family: $default_font;
+}
 address {
   margin: 0 auto;
   a {
    font-style: normal;
    color: $default_color;
-   text-decoration: none; 
+   text-decoration: none;
   }
   ul {
     padding: 0;
