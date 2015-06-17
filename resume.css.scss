@@ -1,0 +1,43 @@
+$default_color: black;
+
+address {
+  margin: 0 auto;
+  a {
+   font-style: normal;
+   color: $default_color;
+   text-decoration: none; 
+  }
+  ul {
+    padding: 0;
+    list-style: none;
+    li {
+      margin-right: 15px;
+      display: inline;
+    }
+  }
+}
+
+dl {
+  margin: 0;
+  dt {
+    display: none;
+  }
+  dd {
+    margin: 0;
+    display: inline;
+
+    &.job_title:after {
+      content: ", ";
+    }
+    &.award:after, &.end_date:before, &.award_date:before {
+      content: " - ";
+    }
+    &.organisation {
+      text-transform: uppercase;
+    }
+    &.start_date:before {
+      content: "\A";
+      white-space: pre;
+    }
+  }
+}
