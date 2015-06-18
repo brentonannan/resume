@@ -1,13 +1,14 @@
 $default_color: black;
 $default_font: 'Open Sans', sans-serif;
 $dark-blue: #323a45;
-$bright-blue: #14b9d5;
+$link: #14b9d5;
+$link-hover: #0c6c7c;
 $light-grey: #e3e8ee;
 $almost-white: #f2f5fa;
 
 
 body {
-  font-family: $default_font;
+  font: 16px/24px $default_font;
   padding: 0;
   margin: 0;
   background-color: #e5e8ed;
@@ -25,6 +26,7 @@ address {
    text-decoration: none;
   }
   ul {
+    margin: 0;
     padding: 20px;
     list-style: none;
     background-color: $light-grey;
@@ -33,6 +35,16 @@ address {
       display: inline;
       color: $dark_blue;
     }
+  }
+}
+
+article {
+  padding-bottom: 10px;
+  border-bottom: 4px solid $light-grey;
+  margin-bottom: 30px;
+
+  li {
+    margin-bottom: 5px;
   }
 }
 
@@ -49,11 +61,23 @@ h1 {
 }
 
 h2 {
-  color: $bright-blue;
+  margin-top: 40px;
+  color: #f26522;
 }
 
 p:first-of-type {
-  font-size:1.2rem;
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+a {
+  color: $link;
+  text-decoration: none;
+  transition: color 0.5s ease;
+  &:hover {
+    color: $link-hover;
+  }
 }
 
 dl {
@@ -65,14 +89,22 @@ dl {
     margin: 0;
     display: inline;
 
-    &.job_title:after {
-      content: ", ";
+    &.job_title {
+      font-weight: 700;
+      text-transform: uppercase;
+      :after {
+        content: ", ";
+      }
+    }
+    &.start_date,&.end_date {
+      font-size: 14px;
+      font-weight: 700;
     }
     &.award:after, &.end_date:before, &.award_date:before {
       content: " - ";
     }
     &.organisation {
-      text-transform: uppercase;
+      font-weight: 700;
     }
     &.start_date:before {
       content: "\A";
@@ -80,6 +112,8 @@ dl {
     }
   }
 }
+
+
 
 .wrapper {
   background-color: $almost-white;
