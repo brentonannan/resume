@@ -1,19 +1,82 @@
 $default_color: black;
+$default_font: 'Open Sans', sans-serif;
+$dark-blue: #323a45;
+$link: #14b9d5;
+$link-hover: #0c6c7c;
+$light-grey: #e3e8ee;
+$almost-white: #f2f5fa;
 
+
+body {
+  font: 16px/24px $default_font;
+  padding: 0;
+  margin: 0;
+  background-color: #e5e8ed;
+  color: $dark_blue;
+}
 address {
-  margin: 0 auto;
+  background-color: $light-grey;
+  text-decoration: none;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
   a {
    font-style: normal;
-   color: $default_color;
-   text-decoration: none; 
+   color: $dark_blue;
+   text-decoration: none;
   }
   ul {
-    padding: 0;
+    margin: 0;
+    padding: 20px;
     list-style: none;
+    background-color: $light-grey;
     li {
       margin-right: 15px;
-      display: inline;
+      display: inline-block;
+      color: $dark_blue;
     }
+  }
+}
+
+article {
+  padding-bottom: 10px;
+  border-bottom: 4px solid $light-grey;
+  margin-bottom: 30px;
+
+  li {
+    margin-bottom: 5px;
+  }
+}
+
+h1,h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+h1 {
+  background-color: $dark-blue;
+  color: #ffffff;
+  padding: 20px;
+  margin: 0;
+}
+
+h2 {
+  margin-top: 40px;
+  color: #f26522;
+}
+
+p:first-of-type {
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+a {
+  color: $link;
+  text-decoration: none;
+  transition: color 0.5s ease;
+  &:hover {
+    color: $link-hover;
   }
 }
 
@@ -26,18 +89,73 @@ dl {
     margin: 0;
     display: inline;
 
-    &.job_title:after {
-      content: ", ";
+    &.job_title {
+      font-weight: 700;
+      text-transform: uppercase;
+      :after {
+        content: ", ";
+      }
+    }
+    &.start_date,&.end_date {
+      font-size: 14px;
+      font-weight: 700;
     }
     &.award:after, &.end_date:before, &.award_date:before {
       content: " - ";
     }
     &.organisation {
-      text-transform: uppercase;
+      font-weight: 700;
     }
     &.start_date:before {
       content: "\A";
       white-space: pre;
     }
+  }
+}
+
+.wrapper {
+  background-color: $almost-white;
+  padding: 20px;
+}
+
+@media print {
+  * {
+    background: transparent !important;
+    color: #000000 !important;
+  }
+  @page {
+    margin: 0.75cm;
+  }
+  address ul {
+    padding: 0 20px;
+  }
+  p, p:first-of-type {
+    orphans: 3;
+    widows: 3;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0;
+    padding: 0;
+  }
+  h2 {
+    margin: 20px 0 15px;
+    orphans: 3;
+    widows: 3;
+    page-break-after: avoid;
+  }
+  h3 {
+    orphans: 3;
+    widows: 3;
+    page-break-after: avoid;
+  }
+  article {
+    margin-bottom: 2px;
+    padding-bottom: 0;
+    border: 0;
+  }
+  ul li {
+    font-size: 12px;
+    margin-bottom: 0;
+    line-height: 14px;
   }
 }
