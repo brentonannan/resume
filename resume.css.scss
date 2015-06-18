@@ -32,7 +32,7 @@ address {
     background-color: $light-grey;
     li {
       margin-right: 15px;
-      display: inline;
+      display: inline-block;
       color: $dark_blue;
     }
   }
@@ -123,24 +123,22 @@ dl {
     background: transparent !important;
     color: #000000 !important;
   }
-  a {
-    text-decoration: underline;
-    &:visited {
-      text-decoration: underline;
-    }
-  }
   @page {
-    margin: 0.25cm;
+    margin: 0.75cm;
+  }
+  address ul {
+    padding: 0 20px;
   }
   p, p:first-of-type {
     orphans: 3;
     widows: 3;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 14px;
+    line-height: 16px;
     margin: 0;
     padding: 0;
   }
   h2 {
+    margin: 20px 0 15px;
     orphans: 3;
     widows: 3;
     page-break-after: avoid;
@@ -154,19 +152,10 @@ dl {
     margin-bottom: 2px;
     padding-bottom: 0;
     border: 0;
-    a[href]:after {
-      content: "(" attr(href) ")";
-    }
-    a[href^="javascript:"]:after {
-      content: "";
-    }
-    a[href^="#"]:after {
-      content: "";
-    }
-    ul li {
-      font-size: 12px;
-      margin-bottom: 0;
-      line-height: 14px;
-    }
+  }
+  ul li {
+    font-size: 12px;
+    margin-bottom: 0;
+    line-height: 14px;
   }
 }
