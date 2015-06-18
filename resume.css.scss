@@ -123,12 +123,6 @@ dl {
     background: transparent !important;
     color: #000000 !important;
   }
-  a {
-    text-decoration: underline;
-    &:visited {
-      text-decoration: underline;
-    }
-  }
   @page {
     margin: 0.25cm;
   }
@@ -154,19 +148,5 @@ dl {
     margin-bottom: 2px;
     padding-bottom: 0;
     border: 0;
-    a[href]:after {
-      content: "(" attr(href) ")";
-    }
-    a[href^="javascript:"]:after {
-      content: "";
-    }
-    a[href^="#"]:after {
-      content: "";
-    }
-    ul li {
-      font-size: 12px;
-      margin-bottom: 0;
-      line-height: 14px;
-    }
   }
 }
