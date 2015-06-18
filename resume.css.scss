@@ -126,6 +126,9 @@ dl {
   @page {
     margin: 0.25cm;
   }
+  address ul {
+    padding: 0 20px;
+  }
   p, p:first-of-type {
     orphans: 3;
     widows: 3;
@@ -135,6 +138,7 @@ dl {
     padding: 0;
   }
   h2 {
+    margin: 20px 0 15px;
     orphans: 3;
     widows: 3;
     page-break-after: avoid;
