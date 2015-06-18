@@ -1,24 +1,59 @@
 $default_color: black;
 $default_font: 'Open Sans', sans-serif;
+$dark-blue: #323a45;
+$bright-blue: #14b9d5;
+$light-grey: #e3e8ee;
+$almost-white: #f2f5fa;
+
 
 body {
   font-family: $default_font;
+  padding: 0;
+  margin: 0;
+  background-color: #e5e8ed;
+  color: $dark_blue;
 }
 address {
-  margin: 0 auto;
+  background-color: $light-grey;
+  text-decoration: none;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
   a {
    font-style: normal;
-   color: $default_color;
+   color: $dark_blue;
    text-decoration: none;
   }
   ul {
-    padding: 0;
+    padding: 20px;
     list-style: none;
+    background-color: $light-grey;
     li {
       margin-right: 15px;
       display: inline;
+      color: $dark_blue;
     }
   }
+}
+
+h1,h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+h1 {
+  background-color: $dark-blue;
+  color: #ffffff;
+  padding: 20px;
+  margin: 0;
+}
+
+h2 {
+  color: $bright-blue;
+}
+
+p:first-of-type {
+  font-size:1.2rem;
 }
 
 dl {
@@ -44,4 +79,9 @@ dl {
       white-space: pre;
     }
   }
+}
+
+.wrapper {
+  background-color: $almost-white;
+  padding: 20px;
 }
