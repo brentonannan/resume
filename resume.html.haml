@@ -2,7 +2,7 @@
   %head
     %link(rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css")/
     %link(rel="stylesheet" type="text/css" href="resume.css")/
-    %link(rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700")/
+    %link(rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700")/
   %body
     %h1 Brenton J. Annan
     %address
@@ -17,93 +17,94 @@
         %li.github
           %i.fa.fa-github.fa-lg
           %a(href="http://github.com/brentonannan")brentonannan
-    %p
-      Full-stack web developer with seven years industry experience in building and maintaining web applications on a variety of platforms. Knowledgeable and experienced with a range of technologies, with a keen interest in innovation.
+    .wrapper
+      %p
+        Full-stack web developer with seven years industry experience in building and maintaining web applications on a variety of platforms. Knowledgeable and experienced with a range of technologies, with a keen interest in innovation.
 
-    %h2 Professional Experience
-    %article
-      %dl
-        %dt.job_title Job Title
-        %dd.job_title Web Developer
-        %dt.organisation Organisation
-        %dd.organisation Blake Education
-        %dt.start_date Start Date
-        %dd.start_date
-          %time(datetime="2013-09") September, 2013
-        %dt.end_date End Date
-        %dd.end_date
-          %time(datetime="2015") Present
-      :markdown
-        - Lead the team in adoption of Query, Policy, Presenter, Service, and [Workflow](http://github.com/blake-elearning/workflows) objects/functions in order to decouple our large, complex Ruby on Rails codebase
-        - Generalised the [Reading Eggs](http://readingeggs.com.au/) teacher application to operate on any product, opening the range of Blake's products to the wholesale school market
-        - Integrated the core API of Blake products into the independently-developed WordFlyers product, in order to provide sales, support, and reporting inline with Blake's other products
-        - Shipped an ebook distribution product, using the [Bigcommerce](https://www.bigcommerce.com/) and [Yudu](http://www.yudu.com/) HTTP APIs
-    %article
-      %dl
-        %dt.job_title Job Title
-        %dd.job_title Web Developer
-        %dt.organisation Organisation
-        %dd.organisation Computer Science and Engineering, UNSW
-        %dt.start_date Start Date
-        %dd.start_date
-          %time(datetime="2011-10") October, 2011
-        %dt.end_date End Date
-        %dd.end_date
-          %time(datetime="2013-06") June, 2013
-      :markdown
-        - Assessed existing web and database systems, planned and implemented an incremental migration from PHP/FileMaker to Ruby on Rails/MySQL whilst maintaining existing FileMaker frontend
-        - Developed a bespoke authorisation gem for fine-grained access control in Rails applications
-        - Shipped an independent Ruby on Rails application for enrolling students into summer/winter courses
-    %article
-      %dl
-        %dt.job_title Job Title
-        %dd.job_title Web Developer
-        %dt.organisation Organisation
-        %dd.organisation Netregistry Pty Ltd
-        %dt.start_date Start Date
-        %dd.start_date
-          %time(datetime="2009-12") December, 2009
-        %dt.end_date End Date
-        %dd.end_date
-          %time(datetime="2010-11") November, 2010
-      :markdown
-        - Designed and shipped custom Django CMS for flagship [netregistry](http://www.netregistry.com.au/) brand website
-        - Developed various Django plugins: a configurable A/B testing ad and offer server; CMS-defined forms with templated email responses; full-text searchable customer support centre
-        - Maintained various PHP based websites for subsidiary brands
-    %article
-      %dl
-        %dt.job_title Job Title
-        %dd.job_title Software Specialist
-        %dt.organisation Organisation
-        %dd.organisation Computer Science, UMass Amherst, MA USA
-        %dt.start_date Start Date
-        %dd.start_date
-          %time(datetime="2008-08") August, 2008
-        %dt.end_date End Date
-        %dd.end_date
-          %time(datetime="2009-09") September, 2009
-      :markdown
-        - Designed and developed an Annual Faculty Review web application in the Django MVC framework
-        - Repaired and expanded malfuntioning PHP/MySQL publication repository web application
-        - Maintaned and developed Drupal CMS based website, including custom module development
-        - Contributed to the Apple iCal2 Server project, later taken over by Google
-%h2 Education and Training
-%ul
-  %li
-    %dl
-      %dt.award Award
-      %dd.award B. Sci (Computer Science), B. Sci. (Mathematics)
-      %dt.organisation Organisation
-      %dd.organisation UNSW
-      %dt.award_date Date
-      %dd.award_date
-        %time(datetime="2008-07") July, 2008
-  %li
-    %dl
-      %dt.award Award
-      %dd.award Intermediate Ruby on Rails
-      %dt.organisation Organisation
-      %dd.organisation Thoughtbot, Boston, MA
-      %dt.award_date Date
-      %dd.award_date
-        %time(datetime="2012-12") December, 2012
+      %h2 Professional Experience
+      %article
+        %dl
+          %dt.job_title Job Title
+          %dd.job_title Web Developer
+          %dt.organisation Organisation
+          %dd.organisation Blake Education
+          %dt.start_date Start Date
+          %dd.start_date
+            %time(datetime="2013-09") September, 2013
+          %dt.end_date End Date
+          %dd.end_date
+            %time(datetime="2015") Present
+        :markdown
+          - Lead the team in adoption of Query, Policy, Presenter, Service, and [Workflow](http://github.com/blake-elearning/workflows) objects/functions in order to decouple our large, complex Ruby on Rails codebase
+          - Generalised the [Reading Eggs](http://readingeggs.com.au/) teacher application to operate on any product, opening the range of Blake's products to the wholesale school market
+          - Integrated the core API of Blake products into the independently-developed WordFlyers product, in order to provide sales, support, and reporting inline with Blake's other products
+          - Shipped an ebook distribution product, using the [Bigcommerce](https://www.bigcommerce.com/) and [Yudu](http://www.yudu.com/) HTTP APIs
+      %article
+        %dl
+          %dt.job_title Job Title
+          %dd.job_title Web Developer
+          %dt.organisation Organisation
+          %dd.organisation Computer Science and Engineering, UNSW
+          %dt.start_date Start Date
+          %dd.start_date
+            %time(datetime="2011-10") October, 2011
+          %dt.end_date End Date
+          %dd.end_date
+            %time(datetime="2013-06") June, 2013
+        :markdown
+          - Assessed existing web and database systems, planned and implemented an incremental migration from PHP/FileMaker to Ruby on Rails/MySQL whilst maintaining existing FileMaker frontend
+          - Developed a bespoke authorisation gem for fine-grained access control in Rails applications
+          - Shipped an independent Ruby on Rails application for enrolling students into summer/winter courses
+      %article
+        %dl
+          %dt.job_title Job Title
+          %dd.job_title Web Developer
+          %dt.organisation Organisation
+          %dd.organisation Netregistry Pty Ltd
+          %dt.start_date Start Date
+          %dd.start_date
+            %time(datetime="2009-12") December, 2009
+          %dt.end_date End Date
+          %dd.end_date
+            %time(datetime="2010-11") November, 2010
+        :markdown
+          - Designed and shipped custom Django CMS for flagship [netregistry](http://www.netregistry.com.au/) brand website
+          - Developed various Django plugins: a configurable A/B testing ad and offer server; CMS-defined forms with templated email responses; full-text searchable customer support centre
+          - Maintained various PHP based websites for subsidiary brands
+      %article
+        %dl
+          %dt.job_title Job Title
+          %dd.job_title Software Specialist
+          %dt.organisation Organisation
+          %dd.organisation Computer Science, UMass Amherst, MA USA
+          %dt.start_date Start Date
+          %dd.start_date
+            %time(datetime="2008-08") August, 2008
+          %dt.end_date End Date
+          %dd.end_date
+            %time(datetime="2009-09") September, 2009
+        :markdown
+          - Designed and developed an Annual Faculty Review web application in the Django MVC framework
+          - Repaired and expanded malfuntioning PHP/MySQL publication repository web application
+          - Maintaned and developed Drupal CMS based website, including custom module development
+          - Contributed to the Apple iCal2 Server project, later taken over by Google
+      %h2 Education and Training
+      %ul
+        %li
+          %dl
+            %dt.award Award
+            %dd.award B. Sci (Computer Science), B. Sci. (Mathematics)
+            %dt.organisation Organisation
+            %dd.organisation UNSW
+            %dt.award_date Date
+            %dd.award_date
+              %time(datetime="2008-07") July, 2008
+        %li
+          %dl
+            %dt.award Award
+            %dd.award Intermediate Ruby on Rails
+            %dt.organisation Organisation
+            %dd.organisation Thoughtbot, Boston, MA
+            %dt.award_date Date
+            %dd.award_date
+              %time(datetime="2012-12") December, 2012
