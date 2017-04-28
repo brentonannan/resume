@@ -46,8 +46,11 @@ article {
   border-bottom: 4px solid $light-grey;
   margin-bottom: 30px;
 
-  li {
-    margin-bottom: 5px;
+  ul {
+    padding-left: 20px;
+    li {
+      margin-bottom: 5px;
+    }
   }
 }
 
@@ -80,6 +83,10 @@ a {
   &:hover {
     color: $link-hover;
   }
+}
+
+section.education dl dd {
+  font-weight: normal;
 }
 
 dl {
@@ -129,7 +136,7 @@ dl {
     margin: 0.75cm;
   }
   address ul {
-    padding: 0 20px;
+    padding: 0;
   }
   p, p:first-of-type {
     orphans: 3;
