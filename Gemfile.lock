@@ -1,34 +1,33 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (4.2.2)
+    activesupport (5.1.0)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (~> 0.7)
-      json (~> 1.7, >= 1.7.7)
       minitest (~> 5.1)
-      thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
+    concurrent-ruby (1.0.5)
     haml (4.0.6)
       tilt
-    i18n (0.7.0)
-    json (1.8.3)
-    kramdown (1.7.0)
+    i18n (0.8.1)
+    kramdown (1.13.2)
     logutils (0.6.1)
     markdown (1.2.0)
       kramdown (>= 1.5.0)
       props (>= 1.1.2)
       textutils (>= 0.10.0)
-    minitest (5.7.0)
+    minitest (5.10.1)
     props (1.1.2)
-    rubyzip (1.1.7)
+    rubyzip (1.2.1)
     sass (3.4.14)
-    textutils (1.3.1)
+    textutils (1.4.0)
       activesupport
       logutils (>= 0.6.1)
       props (>= 1.1.2)
-      rubyzip
-    thread_safe (0.3.5)
+      rubyzip (>= 1.0.0)
+    thread_safe (0.3.6)
     tilt (2.0.1)
-    tzinfo (1.2.2)
+    tzinfo (1.2.3)
       thread_safe (~> 0.1)
 
 PLATFORMS
@@ -40,4 +39,4 @@ DEPENDENCIES
   sass
 
 BUNDLED WITH
-   1.10.4
+   1.14.6
