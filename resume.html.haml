@@ -5,120 +5,113 @@
     %link(rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700")/
   %body
     %h1 Brenton J. Annan
-    %address
-      %ul
-        %li
-          %i.fa.fa-envelope-o.fa-lg
-          %a(href="mailto:brentonannan@brentonannan.com")brentonannan@brentonannan.com
-        %li
+    %section.contact
+      %address
+        %ul
+          %li
+            %i.fa.fa-envelope-o.fa-lg
+            %a(href="mailto:brentonannan@brentonannan.com")brentonannan@brentonannan.com
+          %li
 
-          %i.fa.fa-phone.fa-lg
-          %a(href="tel:+61425341852")0425 341 852
-        %li.github
-          %i.fa.fa-github.fa-lg
-          %a(href="http://github.com/brentonannan")brentonannan
+            %i.fa.fa-phone.fa-lg
+            %a(href="tel:+61425341852")0425 341 852
+          %li.github
+            %i.fa.fa-github.fa-lg
+            %a(href="http://github.com/brentonannan")brentonannan
+    %section.education
+      %dl
+        %dt.award Award
+        %dd.award B. Sci (Computer Science), B. Sci. (Mathematics)
+        %dt.organisation Organisation
+        %dd.organisation UNSW
+        %dt.award_date Date
+        %dd.award_date
+          %time(datetime="2008-07") July, 2008
     .wrapper
-      %p
-        %strong
-          Full-stack web developer with seven years industry experience in building and maintaining web applications on a variety of platforms. Knowledgeable and experienced with a range of technologies, with a keen interest in innovation.
+      %section.synopsis
+        %p I am a Web Developer with experience ranging from the frontend through to server administration, with my strongest interest being in backend application development. I enjoy the challenges of developing quality software, especially working in cooperation with other developers to deliver excellent user experiences. I've worked in varied environments; both independent and in small and large teams, in-office and remote, and am passionate about finding solutions to encourage team collaboration.
 
-      %h2 Professional Experience
-      %article
-        %dl
-          %dt.job_title Job Title
-          %dd.job_title Web Developer
-          %dt.organisation Organisation
-          %dd.organisation Blake Education
-          %dt.start_date Start Date
-          %dd.start_date
-            %time(datetime="2013-09") September, 2013
-          %dt.end_date End Date
-          %dd.end_date
-            %time(datetime="2015") Present
-        :markdown
-          - Lead the team in adoption of Query, Policy, Presenter, Service, and [Workflow](http://github.com/blake-elearning/workflows) objects/functions in order to decouple our large, complex Ruby on Rails codebase
-          - Generalised the [Reading Eggs](http://readingeggs.com.au/) teacher application to operate on any product, opening the range of Blake products to the wholesale school market
-          - Integrated the core API of Blake products into the independently-developed WordFlyers product, in order to provide sales, support, and reporting inline with Blake's other products
-          - Shipped an ebook distribution product, using the [Bigcommerce](https://www.bigcommerce.com/) and [Yudu](http://www.yudu.com/) HTTP APIs
-      %article
-        %dl
-          %dt.job_title Job Title
-          %dd.job_title Web Developer
-          %dt.organisation Organisation
-          %dd.organisation Computer Science and Engineering, UNSW
-          %dt.start_date Start Date
-          %dd.start_date
-            %time(datetime="2011-10") October, 2011
-          %dt.end_date End Date
-          %dd.end_date
-            %time(datetime="2013-06") June, 2013
-        :markdown
-          - Assessed existing web and database systems, planned and implemented an incremental migration from PHP/FileMaker to Ruby on Rails/MySQL whilst maintaining existing FileMaker frontend
-          - Developed a bespoke authorisation gem for fine-grained access control in Rails applications
-          - Shipped an independent Ruby on Rails application for enrolling students into summer/winter courses
-      %article
-        %dl
-          %dt.job_title Job Title
-          %dd.job_title Web Developer
-          %dt.organisation Organisation
-          %dd.organisation Netregistry Pty Ltd
-          %dt.start_date Start Date
-          %dd.start_date
-            %time(datetime="2009-12") December, 2009
-          %dt.end_date End Date
-          %dd.end_date
-            %time(datetime="2010-11") November, 2010
-        :markdown
-          - Designed and shipped custom Django CMS for flagship [netregistry](http://www.netregistry.com.au/) brand website
-          - Developed various Django plugins: a configurable A/B testing ad and offer server; CMS-defined forms with templated email responses; full-text searchable customer support centre
-          - Maintained various PHP based websites for subsidiary brands
-      %article
-        %dl
-          %dt.job_title Job Title
-          %dd.job_title Software Specialist
-          %dt.organisation Organisation
-          %dd.organisation Computer Science, UMass Amherst, MA USA
-          %dt.start_date Start Date
-          %dd.start_date
-            %time(datetime="2008-08") August, 2008
-          %dt.end_date End Date
-          %dd.end_date
-            %time(datetime="2009-09") September, 2009
-        :markdown
-          - Designed and developed an Annual Faculty Review web application in the Django MVC framework
-          - Repaired and expanded malfuntioning PHP/MySQL publication repository web application
-          - Maintaned and developed Drupal CMS based website, including custom module development
-          - Contributed to the Apple iCal2 Server project, later taken over by Google
-      %article
-        %dl
-          %dt.job_title Job Title
-          %dd.job_title Freelance Web Developer
-          %dt.start_date Start Date
-          %dd.start_date
-            %time(datetime="2013-06") June, 2013
-          %dt.end_date End Date
-          %dd.end_date
-            %time(datetime="2015-06") Present
-        :markdown
-          - Backend Ruby on Rails development and dev-ops for [industrymoves.com](http://industrymoves.com)
-          - Contract development for [Canoniq](http://canoniq.com/) and [inner core designs](http://icdesigns.com.au)
-      %h2 Education and Training
-      %ul
-        %li
+      %section.experience
+        %h2 Professional Experience
+        %article
           %dl
-            %dt.award Award
-            %dd.award B. Sci (Computer Science), B. Sci. (Mathematics)
+            %dt.job_title Job Title
+            %dd.job_title Web Developer, Ruby on Rails
             %dt.organisation Organisation
-            %dd.organisation UNSW
-            %dt.award_date Date
-            %dd.award_date
-              %time(datetime="2008-07") July, 2008
-        %li
+            %dd.organisation Blake Education
+            %dt.start_date Start Date
+            %dd.start_date
+              %time(datetime="2013-09") September, 2013
+            %dt.end_date End Date
+            %dd.end_date
+              %time(datetime="2015-10") October, 2015
+          %p
+          %ul
+            %li Developed and maintained various applications in ruby and rails, for elearning products used by over 6 million children worldwide, as part of a team of approximately twenty developers
+            %li Led the team in adoption of more composable, modular, and functional programming practices, helping to dramatically reduce code replication in very large codebases
+            %li Mentored junior developers, both in-person and remotely, to develop skills, understanding of programming concepts, and personal style
+            %li Generalised the <a href="http://readingeggs.com.au/">Reading Eggs</a> teacher application to operate on all products, opening the range of Blake products to the wholesale school market
+            %li Integrated the core API of Blake products into the independently-developed <a href="http://wordflyers.com.au/">WordFlyers</a> product, in order to provide sales, support, and reporting inline with Blake's other products
+            %li Shipped an ebook distribution product, using the <a href="https://www.bigcommerce.com/">Bigcommerce</a> and <a href="http://www.yudu.com/">Yudu</a> HTTP APIs
+        %article
           %dl
-            %dt.award Award
-            %dd.award Intermediate Ruby on Rails
+            %dt.job_title Job Title
+            %dd.job_title Web Developer
             %dt.organisation Organisation
-            %dd.organisation Thoughtbot, Boston, MA
-            %dt.award_date Date
-            %dd.award_date
-              %time(datetime="2012-12") December, 2012
+            %dd.organisation Computer Science and Engineering, UNSW
+            %dt.start_date Start Date
+            %dd.start_date
+              %time(datetime="2011-10") October, 2011
+            %dt.end_date End Date
+            %dd.end_date
+              %time(datetime="2013-06") June, 2013
+          :markdown
+            - Assessed existing web and database systems, planned and implemented an incremental migration from PHP/FileMaker to Ruby on Rails/MySQL whilst maintaining existing FileMaker frontend
+            - Developed a bespoke authorisation gem for fine-grained access control in Rails applications
+            - Shipped an independent Ruby on Rails application for enrolling students into summer/winter courses
+        %article
+          %dl
+            %dt.job_title Job Title
+            %dd.job_title Web Developer
+            %dt.organisation Organisation
+            %dd.organisation Netregistry Pty Ltd
+            %dt.start_date Start Date
+            %dd.start_date
+              %time(datetime="2009-12") December, 2009
+            %dt.end_date End Date
+            %dd.end_date
+              %time(datetime="2010-11") November, 2010
+          :markdown
+            - Designed and shipped custom Django CMS for flagship [netregistry](http://www.netregistry.com.au/) brand website
+            - Developed various Django plugins: a configurable A/B testing ad and offer server; CMS-defined forms with templated email responses; full-text searchable customer support centre
+            - Maintained various PHP based websites for subsidiary brands
+        %article
+          %dl
+            %dt.job_title Job Title
+            %dd.job_title Software Specialist
+            %dt.organisation Organisation
+            %dd.organisation Computer Science, UMass Amherst, MA USA
+            %dt.start_date Start Date
+            %dd.start_date
+              %time(datetime="2008-08") August, 2008
+            %dt.end_date End Date
+            %dd.end_date
+              %time(datetime="2009-09") September, 2009
+          :markdown
+            - Designed and developed an Annual Faculty Review web application in the Django MVC framework
+            - Repaired and expanded malfuntioning PHP/MySQL publication repository web application
+            - Maintaned and developed Drupal CMS based website, including custom module development
+            - Contributed to the Apple iCal2 Server project, later taken over by Google
+        %article
+          %dl
+            %dt.job_title Job Title
+            %dd.job_title Freelance Web Developer
+            %dt.start_date Start Date
+            %dd.start_date
+              %time(datetime="2013-06") June, 2013
+            %dt.end_date End Date
+            %dd.end_date
+              %time(datetime="2015-06") Present
+          :markdown
+            - Backend Ruby on Rails development and dev-ops for [industrymoves.com](http://industrymoves.com)
+            - Contract development for [Canoniq](http://canoniq.com/) and [inner core designs](http://icdesigns.com.au)
