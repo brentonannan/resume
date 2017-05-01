@@ -116,10 +116,13 @@ section.education dl dd {
 }
 
 section.experience dl {
+  * {
+    font-weight: 700;
+  }
+
   dd {
     margin: 0;
     display: inline;
-    font-weight: 700;
     font-size: 14px;
 
     &.job_title {
@@ -162,17 +165,6 @@ section.experience dl {
   }
   h1 {
     font-size: 20px;
-  }
-  h2 {
-    margin: 20px 0 15px;
-    orphans: 3;
-    widows: 3;
-    page-break-after: avoid;
-  }
-  h3 {
-    orphans: 3;
-    widows: 3;
-    page-break-after: avoid;
   }
   article {
     margin-bottom: 10px;
