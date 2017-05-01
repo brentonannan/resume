@@ -1,0 +1,128 @@
+body {
+  font: 14px/20px "Open Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #e5e8ed;
+  color: #323a45; }
+
+section {
+  margin: 10px 20px; }
+
+address {
+  background-color: #e3e8ee;
+  text-decoration: none;
+  font-style: normal;
+  margin: 0;
+  padding: 0; }
+  address a {
+    font-style: normal;
+    color: #323a45;
+    text-decoration: none; }
+  address ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #e3e8ee; }
+    address ul li {
+      margin-right: 15px;
+      display: inline-block;
+      color: #323a45; }
+
+.wrapper {
+  background-color: #f2f5fa; }
+  .wrapper section {
+    padding: 10px 0 0; }
+
+article {
+  padding-bottom: 10px;
+  border-bottom: 4px solid #e3e8ee;
+  margin-bottom: 30px; }
+  article ul {
+    padding-left: 20px; }
+    article ul li {
+      margin-bottom: 5px; }
+
+h1, h2 {
+  text-transform: uppercase;
+  font-weight: 300; }
+
+h1 {
+  background-color: #323a45;
+  color: #ffffff;
+  padding: 20px;
+  margin: 0; }
+
+h2 {
+  margin-top: 40px;
+  color: #f26522; }
+
+p:first-of-type {
+  margin-top: 20px;
+  line-height: 28px; }
+
+a {
+  color: #14b9d5;
+  text-decoration: none;
+  transition: color 0.5s ease; }
+  a:hover {
+    color: #0c6c7c; }
+
+dl {
+  margin: 0; }
+  dl dt {
+    display: none; }
+  dl dd {
+    margin: 0;
+    display: inline; }
+
+section.education dl dd {
+  font-weight: normal; }
+  section.education dl dd.award:after, section.education dl dd.award_date:before {
+    content: " - "; }
+
+section.experience dl * {
+  font-weight: 700; }
+section.experience dl dd {
+  margin: 0;
+  display: inline;
+  font-size: 14px; }
+  section.experience dl dd.job_title {
+    text-transform: uppercase; }
+    section.experience dl dd.job_title :after {
+      content: ", "; }
+  section.experience dl dd.organisation:before, section.experience dl dd.start_date:before {
+    content: "\A";
+    white-space: pre; }
+  section.experience dl dd.end_date:before {
+    content: " - "; }
+
+@media print {
+  * {
+    background: transparent !important;
+    font: 12px/14px "Open Sans", sans-serif;
+    color: #000000 !important; }
+
+  @page {
+    margin: 0.75cm; }
+  address ul {
+    padding: 0; }
+
+  p, p:first-of-type {
+    orphans: 3;
+    widows: 3;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0;
+    padding: 0; }
+
+  h1 {
+    font-size: 20px; }
+
+  article {
+    margin-bottom: 10px;
+    padding-bottom: 0;
+    border: 0; }
+
+  ul li {
+    margin-bottom: 0;
+    line-height: 14px; } }
