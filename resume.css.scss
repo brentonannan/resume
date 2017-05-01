@@ -97,25 +97,21 @@ dl {
   dd {
     margin: 0;
     display: inline;
+    font-weight: 700;
+    font-size: 14px;
 
     &.job_title {
-      font-weight: 700;
       text-transform: uppercase;
       :after {
         content: ", ";
       }
     }
     &.start_date,&.end_date {
-      font-size: 14px;
-      font-weight: 700;
     }
     &.award:after, &.end_date:before, &.award_date:before {
       content: " - ";
     }
-    &.organisation {
-      font-weight: 700;
-    }
-    &.start_date:before {
+    &.organisation:before, &.start_date:before {
       content: "\A";
       white-space: pre;
     }
