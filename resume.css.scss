@@ -14,9 +14,11 @@ body {
   background-color: #e5e8ed;
   color: $dark_blue;
 }
+
 section {
   margin: 10px 20px;
 }
+
 address {
   background-color: $light-grey;
   text-decoration: none;
@@ -38,6 +40,13 @@ address {
       display: inline-block;
       color: $dark_blue;
     }
+  }
+}
+
+.wrapper {
+  background-color: $almost-white;
+  section {
+    padding: 20px 0 0;
   }
 }
 
@@ -85,15 +94,28 @@ a {
   }
 }
 
-section.education dl dd {
-  font-weight: normal;
-}
-
 dl {
   margin: 0;
+
   dt {
     display: none;
   }
+
+  dd {
+    margin: 0;
+    display: inline;
+  }
+}
+
+section.education dl dd {
+  font-weight: normal;
+
+  &.award:after, &.award_date:before {
+    content: " - ";
+  }
+}
+
+section.experience dl {
   dd {
     margin: 0;
     display: inline;
@@ -106,21 +128,16 @@ dl {
         content: ", ";
       }
     }
-    &.start_date,&.end_date {
-    }
-    &.award:after, &.end_date:before, &.award_date:before {
-      content: " - ";
-    }
+
     &.organisation:before, &.start_date:before {
       content: "\A";
       white-space: pre;
     }
-  }
-}
 
-.wrapper {
-  background-color: $almost-white;
-  padding: 10px 0 0;
+    &.end_date:before {
+      content: " - ";
+    }
+  }
 }
 
 @media print {
